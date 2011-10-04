@@ -1,18 +1,24 @@
 #Calculadora.rb
 class Calculadora
+
 	def suma(a , b)
 		a + b
 	end
+
 	def resta(c, d)
 		c - d
 	end
-	def multiplica (e, f)
+
+	def multiplica(e, f)
 		e * f
 	end
-	def diferente0 (g)
-		g == 0 ? false : true
+
+	def no_es_cero(g)
+		g != 0
 	end
-	def divide (h, i)
-		(diferente0(i)) ? h/i : 0		
+
+	def divide (numerador, denominador)
+		no_es_cero(denominador) ? numerador / denominador : 0		
 	end
+	
 end
